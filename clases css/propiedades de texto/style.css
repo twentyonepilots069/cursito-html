@@ -1,6 +1,6 @@
 p {
     color: red;
-    font-family: Ale,Montserrat,sans-serif,tahoma,arial; /*cuando el nombre de la tipografia tiene mas de una palabra va entre comillas ''  despues de la coma son tipografias si la primera falla*/
+    font-family: ale,Montserrat,sans-serif,tahoma,arial; /*cuando el nombre de la tipografia tiene mas de una palabra va entre comillas ''  despues de la coma son tipografias si la primera falla*/
     font-size: 13px;
     font-weight: 100;
     text-align: left;

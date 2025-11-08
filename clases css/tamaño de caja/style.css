@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+/*se creo la clase .box y otras clases dentro de esta*/
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 10px;
+}
+
+.box-default {
+    padding: 25px;
+    border: 10px solid black;
+}
+
+.box-new { 
+    box-sizing: border-box;
+    padding: 25px;
+    border: 10px solid black;
+}
+/* border-box es una propiedad CSS que le dice al navegador que el ancho y alto de un elemento deben incluir su contenido,
+    relleno (padding) y borde.*/

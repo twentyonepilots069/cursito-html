@@ -1,0 +1,33 @@
+.bordes {
+    background: red;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+}
+/*se añade el mismo div abajo para la explicación pero es una mala practica y deberia ir dentro del div de arriba*/
+.bordes {
+    /*border-width: 3;
+    border-color: black;
+    border-style: solid;*/
+    border: 3px solid blueviolet; /*esto es exactamente lo mismo que arriba*/
+    border-bottom: 3px dashed yellowgreen;
+    border-radius: 4px; /*este funciona como esta abajo para especificar una esquina y tambien como el padding en el sentido de las agujas del reloj*/
+    /*border-top-left-radius: 20px;*/
+    border-radius: 10px 50px 0 4px; /*cuando son solo dos valores el primer valor afecta en diagonal desde la esquina superior izquierda hacia abajo a la derecha y el otro las otras dos esquinas*/
+}
+
+body {
+    background-color: black;
+}
+
+input {
+    margin: 5px;
+    margin-top: 50px;
+    padding: 6px 9px;
+    border: none;
+    border-bottom: 1px solid greenyellow;
+    background: transparent;
+    color: greenyellow;
+    border-radius: 20px;
+    width: 90%;
+}
