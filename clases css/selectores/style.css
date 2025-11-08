@@ -1,0 +1,11 @@
+li {
+    color: rgb(35, 162, 221);
+}
+
+.ingrediente-faltante{  /* el . sirve para indicar una clase */
+    color: red;
+}
+
+#ingrediente-secreto{
+    color: blue;
+}

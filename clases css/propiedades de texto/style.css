@@ -1,0 +1,28 @@
+p {
+    color: red;
+    font-family: Ale,Montserrat,sans-serif,tahoma,arial; /*cuando el nombre de la tipografia tiene mas de una palabra va entre comillas ''  despues de la coma son tipografias si la primera falla*/
+    font-size: 13px;
+    font-weight: 100;
+    text-align: left;
+    line-height: 2; /*define el interlineado*/
+    letter-spacing: 1px;
+    text-transform: uppercase;
+/*  word-wrap: break-word; este sirve para cortar el texto al final de linea en silabas
+    word-break: break-all; corta el texto sin importar nada*/
+    
+
+}
+span {
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: line-through;
+
+}
+
+button {
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+}

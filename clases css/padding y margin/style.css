@@ -1,0 +1,40 @@
+.formulario {
+    background: red;
+    padding: 30px;
+/*
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    */
+    /*es igual q pading: 20px*/
+
+    /*para especificar tamaños de forma mas sencilla es siguiendo las agujas del reloj*/
+    /*padding: 10px 0 40px 20px;*/
+    /*si solo se añaden dos ejem: pading: 10px 20px usara el primero para top y bottom y el segundo para left y right*/
+}
+
+.formulario_input{
+    padding: 9px 12px;
+    width: 90%;
+    background: black;
+    color: red;
+    margin: 10px;
+}
+
+.formulario_submit{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: red;
+    color: white;
+    width: 50%;
+}
+
+.box {
+    background: red;
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+}
+
+/*el margin colapse evite que se sumen los margenes, desde otra perspectiva solo toma el margen mayor*/
