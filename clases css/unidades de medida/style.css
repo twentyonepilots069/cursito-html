@@ -1,14 +1,31 @@
+/*html {
+    font-size: 10px;
+}*/
+
+body {
+    font-size: 40px;
+    margin: 0;
+}
+
 div {
     background: #ededed;
     padding: 20px; 
     /*la medida cm; centimetro se usa para cosas puntuales que requieran una medida exacta como imprimir, la medida mm; milimetro o in; pulgadas tambien se usan para cosas puntuales ejemplo las medidas de un banner para imprimir*/
     font-family: sans-serif;
     border-left: 5px solid #999;
+    font-size: 20px;
+    height: 80vh; 
+    width: 80vw;
+    margin: 0;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 10vh; /*vmax y vmin permiten hacer comparaciones, en este caso toman el mayor o el menor y se transforma en este 1vmax es = al mayor entre 1vh y 1vw   1vmin es = al menor entre 1vh y 1vw*/
 }
 
 h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 2em; /*la medida em; usa el valor que le da la caja padre y lo multiplica por el valor q acompaña la propiedad, esta propiedad aplica buscar a la caja padre del padre y asi sucesivamente si no encuentra la propiedad en la caja padre tambien si no existe en ninguno usa el predeterminado del sistema que es 16px*/
+    /*font-size: 1rem;*/ /*la propiedad rem; es igual que em; con la diferencia de que rem; busca directamente la raiz en este caso el html*/
 }
 
 span {
@@ -19,4 +36,7 @@ span {
 
 p {
     color: #555;
+    /*line-height: 1ex;
+    line-height: 1ch;*/
+    /*1ex usa la altura de la letra x   1ch usa el ancho del cero */
 }
