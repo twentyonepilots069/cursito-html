@@ -1,10 +1,34 @@
 body {
-    background-color: #0f0;
+    background-color: #f97;
+    margin: 0;
+    font-family: sans-serif;
+    color: #fff;
 }
 
 .box {
-    width: 200px;
+    width: 100%px;
     height: 200px;
     margin: 20px;
-    background-color: #f3e;
+    margin: 0;
+    /*background-image: url("https://tierragamer.com/wp-content/uploads/2025/09/bamora-besa-a-okarun-dan-da-dan-1024x576.webp");*/
+    /*background-color: #000; aca tambien se puede jugar con la opacidad*/
+    /*position: absolute;
+    top: 0;*/
+    /*background-position: center; configurar fondo (que es una imagen) para ver partes especificas de la imagen tambien se puede modificar en px*/
+    /*background-repeat: no-repeat; indica si se debe o no repetir y en que orientación se repetira*/
+    /*background-size: 400px 200px; especifica el tamaño*/
+    /*background-size: cover; 
+    background-attachment: fixed; */
+    background: url("https://tierragamer.com/wp-content/uploads/2025/09/bamora-besa-a-okarun-dan-da-dan-1024x576.webp") center / cover fixed;
+    /*el background de arriba simplifica la forma de escribir las propiedades del background*/
+}
+
+.opaco {
+    height: 100%;
+    width: 100%;
+    background-color: #f97a;
+}
+
+h2 {
+    padding: 20px;
 }
