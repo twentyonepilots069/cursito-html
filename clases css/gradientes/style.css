@@ -1,0 +1,33 @@
+body {
+    background-color: red;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to right,transparent,#0009); 
+    /*transparent puede ser en porcentaje tambien, tambien puede ser radial-gradient o conic-gradient*/
+    margin: 0;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 6px solid #900;
+    
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    margin: 0;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+}
