@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <h2>
+            Formulario de contacto
+        </h2>
+        <div class="form_input">
+            <label for="email">Nombre completo</label>
+            <input type="text" placeholder="John Doe" id="nombre">
+        </div>
+        <div class="form_input">
+            <label for="email">ejemplo@gmail.com</label>
+            <input type="email" placeholder="Email" id="email">
+        </div>
+        <div class="form_input">
+            <label for="mensaje">Mensaje</label>
+            <textarea rows="6" placeholder="deja tu mensaje..." id="mensaje"></textarea>
+            <!--el atributo booleano readonly no necesita ningun valor y sirve mostrar un texto pero q no se pueda modificar...es muy parecido al atributo disabled a diferencia q este ultimo no enfoca ni envia al servidor el comentario...el maxlength="140" hace lo obvio-->
+        </div>
+        <div class="form_input">
+            <label>Acepto los terminos y condiciones
+                <input type="checkbox" class="checkbox">
+                <!--Se puede omitir el paso de for y id en los labels si se ocupa toda la linea para la label, es decir la label seria padre de los input o el textarea (estarian adentro del label)-->
+            </label>
+        </div>
+    </form>
+</body>
+</html>
