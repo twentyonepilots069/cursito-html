@@ -13,17 +13,24 @@
         <h2>
             Formulario de contacto
         </h2>
-        <!-- SIMPLE INPUTS-->
-        <div class="form_input">
-            <label>Nombre completo
-                <input type="text" placeholder="john Doe">
-            </label>
-        </div>
-        <div class="form_input">
-            <label>Email
-                <input type="email" placeholder="ejemplo@gmail.com">
-            </label>
-        </div>
+        <fieldset>
+        <legend>INFORMACIÓN BÁSICA</legend> <!-- SIMPLE INPUTS-->
+            <div class="form_input">
+                <label>Nombre completo
+                    <input type="text" placeholder="john Doe">
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Email
+                    <input type="email" placeholder="ejemplo@gmail.com">
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Asunto
+                    <input type="text" placeholder="El asunto de tu mensaje">
+                </label>
+            </div>
+        </fieldset>
         <!-- SELECT & OPTION -->
         <div class="form_input">
             <label>Tipo de usuario
@@ -52,6 +59,12 @@
             <label for="mensaje">Mensaje</label>
             <textarea rows="6" placeholder="deja tu mensaje..." id="mensaje"></textarea>
             <!--el atributo booleano readonly no necesita ningun valor y sirve mostrar un texto pero q no se pueda modificar...es muy parecido al atributo disabled a diferencia q este ultimo no enfoca ni envia al servidor el comentario...el maxlength="140" hace lo obvio-->
+        </div>
+        <div class="form_input">
+            <label>Acepto los terminos y condiciones
+                <input type="checkbox" class="checkbox">
+                <!--Se puede omitir el paso de for y id en los labels si se ocupa toda la linea para la label, es decir la label seria padre de los input o el textarea (estarian adentro del label)-->
+            </label>
         </div>
     </form>
 </body>

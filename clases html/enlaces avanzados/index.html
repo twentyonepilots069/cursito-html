@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="">
+        <h2>
+            Formulario de contacto
+        </h2>
+        <fieldset>
+        <legend>INFORMACIÓN BÁSICA</legend> <!-- SIMPLE INPUTS-->
+            <div class="form_input">
+                <label>Nombre completo
+                    <input type="text" placeholder="john Doe">
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Email
+                    <input type="email" placeholder="ejemplo@gmail.com">
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Asunto
+                    <input type="text" placeholder="El asunto de tu mensaje">
+                </label>
+            </div>
+        </fieldset>
+        <!-- SELECT & OPTION -->
+        <div class="form_input">
+            <label>Tipo de usuario
+                <select name="type-of-user">
+                    <option value="user1">seguidor/a</option>
+                    <!--option tambien funciona sin la etiqueta de cierre en navegadores normales pero podria interferir con navegadores antiguos-->
+                    <option value="user2">empresa</option>
+                    <option value="user3">otros</option>
+                </select>
+            </label>
+        </div>
+        <!-- DATALIST & OPTION -->
+        <div class="form_input">
+            <label>Referente
+                <input list="referente" name="referente">
+                <datalist id="referente" name="type-of-user">
+                    <option value="user1">Soy Ale</option>
+                    <option value="user2">Una empresa</option>
+                    <option value="user3">Un amigo</option>
+                    <option value="Soy Ale">un programador</option>
+                </datalist>
+            </label>
+        </div>
+        <!-- TEXTAREA -->
+        <div class="form_input">
+            <label for="mensaje">Mensaje</label>
+            <textarea rows="6" placeholder="deja tu mensaje..." id="mensaje"></textarea>
+            <!--el atributo booleano readonly no necesita ningun valor y sirve mostrar un texto pero q no se pueda modificar...es muy parecido al atributo disabled a diferencia q este ultimo no enfoca ni envia al servidor el comentario...el maxlength="140" hace lo obvio-->
+        </div>
+        <div class="form_input">
+            <label>Acepto los <a href="terms.html" target="blank">terminos y condiciones</a>
+                <input type="checkbox" class="checkbox">
+                <!--Se puede omitir el paso de for y id en los labels si se ocupa toda la linea para la label, es decir la label seria padre de los input o el textarea (estarian adentro del label)-->
+            </label>
+        </div>
+    </form>
+</body>
+
+</html>
+
+<!--probando cosas en html
+
+rel="noopener" impide que se modifique la pagina raiz al usar un target="blank"
+rel="noreferrer" igual que noopener pero tampoco muestra de que pagina vienen
+rel="nofollow" le dice al buscador que ese enlace es irrelevante para la pagina
+se pueden usar las propiedades en una misma etiqueta
+rel="noopener noreferrer nofollow"
+hora 7:02:00 de curso html
+-->

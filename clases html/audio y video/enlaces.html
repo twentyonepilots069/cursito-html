@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio y Video</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video controls autoplay muted src="video.mp4">
+        <track src="captions.vtt" default kind="captions" srclang="es" label="Español(Latinoamérica)">
+        <!-- el captions.vtt es en otro lenguaje y sirve para los substitulos y captions-->
+        Tu navegador no soporta video <!--mensaje en caso de que el navegador no soporte el video-->
+        <!--en caso de usar la etiqueta audio es conveniente que sea un audio por la razón de que el navegador igual tendra q cargar el video-->
+    </video>
+    <audio controls loop autoplay muted src="video.mp4">
+        <!--la etiqueta loop sirve para reproducir en vucle-->
+        Tu navegador no soporta video <!--mensaje en caso de que el navegador no soporte el video--> 
+        <!--en caso de usar la etiqueta audio es conveniente que sea un audio por la razón de que el navegador igual tendra q cargar el video-->
+    </audio>
+</body>
+</html>
