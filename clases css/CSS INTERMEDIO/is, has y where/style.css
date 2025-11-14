@@ -1,0 +1,50 @@
+section .elemento1,
+section .elemento2,
+section .elemento3 {
+    color: red;
+}
+
+section :is(.elemento1, .elemento2, .elemento3) {
+    color: green;
+}/*esto es exactamento lo mismo que arriba pero con la pseudo clase es mas facil, esta pseudo clase tambien funciona tambien especificar un elemento padre como el section en este ejemplo */
+
+section :where(.elemento1, .elemento2, .elemento3) {
+    color: blue;
+}/*en el where simplemente su especificidad es mas baja, tambien funciona sin especificar padre, SI NO QUEREMOS ALTERAR LA ESPECIFICIDAD SE USA ESTA*/
+
+section:has(.elemento1) {
+    background-color: #000;
+    color: #fff;
+}/*Este funciona como una condición y dice asi: si section tiene un .elemento1 realiza estos cambios*/
+
+
+ul:has(+div) {
+    background-color: #000;
+}
+/*EN CASO DE QUE A UL LE SIGA UN DIV MODIFICAMOS EL UL*/
+
+div {
+    padding: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+/*cositas que se pueden hacer con el has, dificil de explicar, eso esta por la hora 9:30:00 del curso*/
+label:has(input:valid), input:valid {
+    color: green;
+}
+
+label:has(input:invalid), input:invalid{
+    color: red;
+}
+
+/*
+label:has(input[type="email"]:valid) {
+    color: green;
+}
+
+label:has(input[type="email"]:invalid) {
+    color: red;
+}
+tambien se puede ser mas especifico*/

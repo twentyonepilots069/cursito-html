@@ -1,0 +1,21 @@
+#titulo {
+    color: orange;
+}
+
+.titulo {
+    color: blue;
+}
+
+h1 {
+    color: red;
+}
+
+/*visualizar siempre la especificidad*/
+
+/*la linea <link rel="stylesheet" href="style.css">  tiene la misma especificidad que la etiqueta <style> */
+
+/*el atributo style="" que permite ingresar estilo en un etiqueta especifica tiene mas especificidad que la hoja de estilos o la etiqueta <style>*/
+
+/*en casos de etiquetas con las misma especificidad el orden en que estan ubicadas si es importante*/
+
+/*el !important se pasa por los huevos todo y es la regla mas importante*/

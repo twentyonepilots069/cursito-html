@@ -1,0 +1,20 @@
+body {
+    color: brown;
+    
+}
+
+div {
+    font-family: sans-serif;
+    width: 50%;
+}
+
+h1 {
+    color: unset;
+}
+
+/*
+initial; valor por defecto del navegador
+inherit; valor heredado de mas arriba
+unset; restablecer al valor inicial de su padre (inherit) sino a initial.
+revert; intenta cambiar el valor al estilo del usuario y sino lo revierte a inherit
+*/

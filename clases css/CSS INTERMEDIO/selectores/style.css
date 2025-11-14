@@ -1,0 +1,47 @@
+/*SELECTOR POR ATRIBUTO*/
+/*img[src="../../dandandan.jpg"] {
+    width: 100%;
+}*/
+/* ACA SE SELECIONA A LA IMAGEN POR SU ATRIBUTO src.....*/
+
+/*img[src$="jpg"] {
+    width: 100%;
+}*/
+/*ACA SE SELECCIONA A LA IMAGEN POR SU ATRIBUTO src y TERMINA CON jpg*/
+
+img[src^="../../dandandan"] {
+    width: 100%;
+}
+/*ACA SE SELECCIONA A LA IMAGEN POR SU ATRIBUTO src y INICIO con su nombre*/
+
+/*SELECTOR POR DESCENDIENTE*/
+ul li {
+    color: grey;
+}
+
+/*este strong es hijo indirecto de ul o mas bien nieto pero aun asi funciona porq esta dentro del ul*/
+
+/*SELECTOR POR HIJO DIRECTO*/
+li > em {
+    color: red;
+} 
+/*esta regla de estilo aplica a un elemento especifico (en este caso el em aplica porque es hijo directo de ul)*/
+
+/*SELECTOR de hermano ADYACENTE*/
+h1 + p {
+    color: rgb(63, 172, 121);
+}
+
+/*SELECTOR DE HERMANOS GENERALES*/
+h1 ~ p {
+    color: orange; /*este parece q se los come a todos*/
+}
+
+/*ESTE YA SE HABIA VISTO*/
+h1, p {
+    color: brown;
+}
+
+/*SE PUEDEN COMBINAR TAMBIEN ejem::
+h1 + ul > li > a {} ""vale la pena probar"
+*/
