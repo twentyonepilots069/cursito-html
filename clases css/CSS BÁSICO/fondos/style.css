@@ -17,7 +17,7 @@ body {
     /*background-position: center; configurar fondo (que es una imagen) para ver partes especificas de la imagen tambien se puede modificar en px*/
     /*background-repeat: no-repeat; indica si se debe o no repetir y en que orientación se repetira*/
     /*background-size: 400px 200px; especifica el tamaño*/
-    /*background-size: cover; 
+    /*background-size: cover; aca hay otros tipos 
     background-attachment: fixed; */
     background: url("https://tierragamer.com/wp-content/uploads/2025/09/bamora-besa-a-okarun-dan-da-dan-1024x576.webp") center / cover fixed;
     /*el background de arriba simplifica la forma de escribir las propiedades del background*/

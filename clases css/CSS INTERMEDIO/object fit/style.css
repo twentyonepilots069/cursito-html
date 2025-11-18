@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+img {
+    width: 400px;
+    height: 600px;
+    object-fit: none; /*esta sección esta explicada en fondos, pd: esta none, contain, cover*/
+    object-position: center;
+    border: 2px solid #000;
+    margin-top: 50px;
+    margin-left: 50px;
+}/*object-fit: scale-down; se va a quedar con el tamaño que sea menor, si la imagen originalmente (object-fit: none; )tiene menor tamaño se queda con ese, si especificamos un tamaño menor para contenerlo (object-fit: contain;) agarra el menor*/
+
+/*esto se aplica a elemento a diferencia de fondos que se aplica a fondos*/

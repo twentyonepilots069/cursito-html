@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #ccc;
+}
+
+.box {
+    width: 220px;
+    height: 220px;
+    background-color: #fff;
+    margin-top: 50px;
+    color: red;
+    position: relative;
+    left: 0;
+    border: 2px solid #0009;
+    margin: auto;
+    margin-top: 50px;
+    overflow: clip;
+    display: inline-block;
+}/*propiedades: hidden, visible, scroll,  overflow-y, overflow-x para los scroll...y clip para que no deje espacio para las barritas de scroll*/

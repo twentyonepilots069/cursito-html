@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    background-color: #f00;
+    margin-top: 50px;
+    transition: left 1s cubic-bezier(.67, .12, .27, .91) 2s; /*esta linea es un shorthand de lo de abajo, si se quiere agregar delay se agreda despues de cubic bezier en el caso abreviado*/
+    /*transition-property: left;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.67, .12, .27, .91); */
+    position: relative;
+    left: 0;
+}
+/*el cubic bezier se puede visualizar desde las herramientas del navegador*/
+
+body:hover .box {
+    left: 400px;
+}

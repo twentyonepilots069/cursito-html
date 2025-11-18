@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #bbb;
+}
+
+.box {
+    width: 240px;
+    height: 240px;
+    background-color: #f00;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #fff;
+    border: 1px solid #0006;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+    /*overflow-wrap: anywhere; sirve para romper palabras grandes evitando desbordar*/
+    /*text-overflow: ellipsis;si se usa clip lo recorta sin mas, usando illipsis coloca 3puntitos
+    overflow: hidden;*/
+/*propiedad por defecto white-space: normal, nowrap: deja todo en una sola fila, pre: detecta los saltos de linea y espaciados del editor para el texto, pre-wrap= es una combinanción entre normal y pre con la diferencia de que no permite que se desborde*/
+/*word-break: bread-all corta las palabras sin mas,word-break: keep-all evita que en idiomas como el coreano se corten las palabras, word-break: auto-phrase es nueva investigar, normalemente no se tocan esas propiedades mensionadas en este parrafo, */
+/*word-wrap: break-work, o con su nombre actual overflow-wrap*/
+
+h1 {
+    text-wrap: pretty; /* pretty forza que no halla huerfanos es su función, funciona en parrafos*/
+}/*balance; evita palabras huerfanas (solas) funciona mejor en titulos*/

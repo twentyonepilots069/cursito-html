@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    transition-property: background-color, color, font-size, margin;
+    transition-duration: 1s;
+    color: orange;
+    transition-delay: 1s;
+}/*estar atento a las transiciones porq pueden colapsar, por ejemplo con el margin*/
+
+.box:hover {
+    background-color: blue;
+    font-size: 80px;
+    color: #fff;
+    margin-top: 20px;
+}
