@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+}/*esta definido por defecto para que ocupe todo el campo disponible de cross axis*/
+
+.flex-item {
+    background-color: #800;
+    margin: 10px;
+    color: #fff;
+    font-size: 40px;
+    width: 180px;
+}/*padding: 60px; propiedades como padding rompen el la propiedad flex*/
+/*la propiedad direction: ltr o rtl (left to right o right to left cambia la dirección en la que se lee el texto)pdt=esta propiedad se puede usar en la caja flexbox padre tanto como en el item flex hijo*/
+
+.flex-item:first-child {
+    background-color: #d34;
+}
+
+.flex-item:last-child {
+    background-color: #000;
+}

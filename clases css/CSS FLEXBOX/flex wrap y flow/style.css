@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    /*flex-direction: row;
+    flex-wrap: wrap; tambien esta nowrap q fuerza a que esten en una sola linea, esto esta especificado en un txt  (row-reverse, column y column-reverse)*/
+    flex-flow: row wrap; /*es el shorthand de direction y wrap ^^^^ aunque sigue siendo valido preferir no usar el shorthand*/
+    border: 2px solid #000;
+    margin: 20px;
+}
+
+/*esta definido por defecto para que ocupe todo el campo disponible de cross axis*/
+
+.flex-item {
+    background-color: #800;
+    margin: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    width: 100px;
+    direction: rtl;
+}/*padding: 60px; propiedades como padding rompen la propiedad en los item flex*/
+/*la propiedad direction: ltr o rtl (left to right o right to left cambia la dirección en la que se lee el texto)pdt=esta propiedad se puede usar en la caja flexbox padre tanto como en el item flex hijo*/
+
+.flex-item:first-child {
+    background-color: #d34;
+}
+
+.flex-item:last-child {
+    background-color: #000;
+}

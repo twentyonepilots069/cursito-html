@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px;
+    align-items: center;
+    border: 2px solid #000;
+    height: 300px;
+}
+
+.flex-item:nth-child(2n) {
+    background-color: #f77;
+}
+
+.flex-item {
+    background-color: #800;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    flex: 1 1 200px;
+}
+
+.flex-item:last-child {
+    background-color: #000;
+}
+
+.item-5{
+    align-self: stretch;
+}
+/*
+funcionalidad principal, modifica un item especifico, aunque se halla definido antes, este modifica solamente 1 mientras que align item los modifica a todos.
+*/
+
+/*esta propiedad usa: start, end, center=propiedad por defecto, baseline, o stretch*/
+
+/*cuando se usa align-content deja de funcionar align-self, es una propiedad que funciona con align-items*/

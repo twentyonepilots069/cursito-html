@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px;
+    align-items: center;
+    border: 2px solid #000;
+    gap: 10px;
+}
+/*
+gap crea separación entre los elementos hijos
+*/
+
+.flex-item:nth-child(2n) {
+    background-color: #f77;
+}
+
+.flex-item {
+    background-color: #800;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    flex: 1 1 200px;
+}
+/*
+el shorthand de las 3propiedades de abajo, el 1ro grow el 2do shrink y el 3ro basis
+*/
+
+.flex-item:last-child {
+    background-color: #000;
+}
+
+/*la propiedad flex-grow es solo para items (hijos)funcionalidad: establece la cantidad de tamaño que ocupa cada item exclusivamente en el espacio disponible, mientras mas espacio mas se distribuye*/
+
+/*la propiedad flex-shrink es solo para items (hijos)funcionalidad: establece cuanto se va a encoger 1 item o determinados items, ejemplo: flex-shrink: 5; le dice al elemento que si se encogen este debe encogerse 5veces mas que otros.
+
+/*como en el ejemplo estableciendo la propiedad flex-basis y en column es como si usaramos min-width y con row es como si usaramos min-height*/
+
+/*lo recomendado es usar un: flex--basis: 0 y tambien un min-width (de algo)*/
+
+/*
+flex-basis: auto;
+flex-shrink: 1;
+flex-grow: 0;
+estas son las popiedades por defecto del navegador
+*/

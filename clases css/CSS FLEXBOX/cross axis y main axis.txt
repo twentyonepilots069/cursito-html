@@ -1,0 +1,6 @@
+row= left to right /up to down
+row-reverse= right to left /up to down
+column= up to down /left to right
+column-reverse= down to up /left to right
+
+investigar cross axis y main axis
