@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.bloque {
+    display: inline-block;
+    min-width: 250px;
+    background-color: #7bf;
+    margin: auto;
+    width: 100%;
+    flex: 1; /*combinación de grow,shrink,basis, esto representa 1, 1, 0*/
+    font-size: 12px;
+    padding: 10px;
+    margin: 4px;
+}
+/*haciendo la pagina adaptable estableciendo valores min y max, generalmente height no se usa, pero si es necesario especificarlo por alguna razón lo recomendable esta establecer min para que sea adaptable*/
+
+/*aca se usa flexbox para crear bloques que se pueden adaptar*/

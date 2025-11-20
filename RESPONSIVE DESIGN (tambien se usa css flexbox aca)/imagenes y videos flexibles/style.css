@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contenedor {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+}
+
+video {
+    max-width: 100%;
+}
+
+/*.contenedor {
+    position: relative;
+    max-width: 100%;
+    padding-top: 56.25%;
+    height: 0;
+}*/
+
+/*esta sección esta comentada porq hay una manera actual de hacer esto con la propiedad aspect ratio*/
+
+/*video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+}*/
+
+/*
+la relación de aspecto 16/9 se refiere a 16px de ancho por 9 de alto, al necesitar encontrar el valor que corresponde en % a la altura se efectua 
+9/16 = 0,5625 * 100 = 56,25%
+y con esto obtenemos el % correspondiente que se puede dar relleno (padding)
+*/
+
+/*
+En CSS,
+cuando se especifica un porcentaje "%" para las propiedades de relleno (padding-top, padding-bottom, padding-left, padding-right),
+este porcentaje se calcula siempre en relación con el ancho del elemento padre que lo contiene,
+no con la altura del padre o la altura del propio elemento.
+
+Esta es una decisión de diseño fundamental en la especificación de CSS que tiene varias razones prácticas e históricas: Evitar bucles infinitos en el cálculo de alturas: La razón principal es evitar problemas de cálculo circulares. En el flujo normal del documento,
+la altura de un elemento suele depender de su contenido,
+incluido el relleno (padding). Si el relleno vertical (superior e inferior) se basara en un porcentaje de la altura del padre,
+y la altura del padre a su vez dependiera de la altura del hijo,
+se crearía un bucle infinito: el relleno aumentaría la altura del padre,
+lo que aumentaría el relleno,
+y así sucesivamente.
+
+padding-top: 56.25%;
+no afecta directamente a padding-bottom. El padding-top solo agrega espacio en la parte superior del elemento,
+mientras que padding-bottom agrega espacio en la parte inferior. Sin embargo,
+en el contexto de un video,
+usar un porcentaje para padding-top o padding-bottom se usa para mantener la proporción del aspecto,
+de forma que ambos lados (arriba y abajo) se expanden juntos para mantener la relación de aspecto correcta del contenido (por ejemplo, un video de \(16:9\)).
+*/
