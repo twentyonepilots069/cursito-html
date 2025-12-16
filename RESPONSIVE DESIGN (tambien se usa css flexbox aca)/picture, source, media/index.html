@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="../image-small.png"
-    srcset="../image-small.png 360w, ../image-medium.png 600w, ../image.jpg 1000w"
-    sizes="(max-width: 400w) 300px,(max-width: 600px) 500px, 900px"
-    >
+    <picture>
+        <source media="(max-width: 400px)" srcset="../image-small.png">
+        <source media="(max-width: 600px)" srcset="../image-medium.png">
+        <source media="(max-width: 400px)" srcset="../image.jpg">
+    </picture>
 </body>
 </html>
