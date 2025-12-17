@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 1fr 1fr 300px; /*  esto le dice al navegador que puede tener dos o mas columnas y establecer su ancho, como en este caso que son 3 incluso se puede cambiar la dirección con direction: rtl (le leeria al reves como en idiomas arabes) o dejarlo por defecto left to right y la propiedad grid template columns admite rem o vw o otros tipos que se especifican mas adelante en el curso --define el width de las columnas--   */   /* auto tiene en cuenta el contenido minimo y lo que sobra lo distribuye mientras que 1fr lo divide exactamente igual y se lo da en partes iguales aplicandolo desde el width total, ahora si una caja necesita mas espacio por su contenido se lo de y lo restante lo distribuye entre las otras*/
+    grid-template-rows: auto auto; /* en este caso se define las filas, tambien hay filas que se definen de forma automatica dependiendo del la cantidad de elementos, pero en el caso del curso si yo solamente quiero definir el tamaño de la fila 1, definiria solamente 1 elemento en el cual afectaria solamente a la fila 1 --define el height--    */
+}
+
+.grid-item {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+

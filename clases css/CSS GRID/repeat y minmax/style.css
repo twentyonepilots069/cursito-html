@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid {
+    display: grid;
+    height: 90vh;
+    grid-template-columns: repeat(3, minmax(100px,300px)) 1fr; 
+    grid-template-rows: repeat(2,200px) 1fr; 
+}
+
+.grid-item {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+
+
+/*  usando repeat() se puede repetir varias veces, ejemplo grid-template-columns: repeat (3,1fr);   en este caso se repetira 3 veces el 1fr, otros ejemplos de repeat grid-template-columns: (4, 200px 50px) estaria haciendo 4 columnas en este caso, tambien se pueden añadir columnas de forma individual afuera del repeat con normalidad    */
+
+/*  minmax(300px, 700px) hace que la columna como esta en el ejemplo de arriba solo pueda agrandarse hasta los 700px*/
+
+/*  esta parte de abajo esta en los otros tambien*/
+
+/*  esto le dice al navegador que puede tener dos o mas columnas y establecer su ancho, como en este caso que son 3 incluso se puede cambiar la dirección con direction: rtl (le leeria al reves como en idiomas arabes) o dejarlo por defecto left to right y la propiedad grid template columns admite rem o vw o otros tipos que se especifican mas adelante en el curso --define el width de las columnas--   */   /* auto tiene en cuenta el contenido minimo y lo que sobra lo distribuye mientras que 1fr lo divide exactamente igual y se lo da en partes iguales aplicandolo desde el width total, ahora si una caja necesita mas espacio por su contenido se lo de y lo restante lo distribuye entre las otras*/
+
+/* en este caso se define las filas, tambien hay filas que se definen de forma automatica dependiendo del la cantidad de elementos, pero en el caso del curso si yo solamente quiero definir el tamaño de la fila 1, definiria solamente 1 elemento en el cual afectaria solamente a la fila 1 --define el height--    */
+
