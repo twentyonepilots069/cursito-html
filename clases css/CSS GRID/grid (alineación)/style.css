@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body, div {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 50px);
+    gap: 10px;
+    padding: 10px;
+    justify-items: stretch; /*   mueve el item dentro de su celda    */
+    justify-content: space-evenly; /* para mover las celdas dentro del contenedor grid    */
+    align-items: stretch; /*permite alinear items como justify items pero este es para el eje vertical, es decir que la otra es el eje horizontal*/
+    align-content: space-evenly; /* alinea las celdas en el eje vertical dentro del contenedor grid*/
+    height: 350px;
+    border: 2px solid #000;
+    margin: 20px;
+}
+
+.grid-item:first-child {
+    justify-self: center; /*    para mover ese item especifico dentro de su celda*/
+    align-self: stretch; /* lo mismo que justify self pero en el eje vertical*/
+    background-color: #e66;
+}
+
+.grid-item {
+    background-color: #48e;
+    color: #fff;
+    font-size: 30px;
+    font-size: 30px;
+    max-width: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item:hover {
+    opacity: 0.74;
+}
+
